@@ -1,11 +1,12 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'com.google.gms.google-services'
 }
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.example.anonblog"
@@ -42,4 +43,15 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //firebase
+    implementation platform('com.google.firebase:firebase-bom:26.1.1')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.android.gms:play-services-ads:19.6.0'
+    implementation platform('com.google.firebase:firebase-firestore')
+    implementation platform('com.google.firebase:firebase-storage')
+    implementation('com.google.firebase:firebase-database')
+    implementation('com.google.firebase:firebase-inappmessaging')
+    implementation('com.google.firebase:firebase-messaging')
+    implementation('com.google.firebase:firebase-inappmessaging-display')
 }

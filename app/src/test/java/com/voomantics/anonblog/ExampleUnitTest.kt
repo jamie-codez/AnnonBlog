@@ -1,4 +1,4 @@
-package com.example.anonblog
+package com.voomantics.anonblog
 
 import org.junit.Test
 
